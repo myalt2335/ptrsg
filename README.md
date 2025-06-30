@@ -1,7 +1,8 @@
 # PTRSG
 One of the tools of all time.
 
-This tool is made for Windows, it hardcodes .exe when making the temporary files it utilizes. Later on I will probably fix that to make it cross platform but for the time being its windows exclusive.
+Currently, it only supports **Windows** because it hardcodes `.exe` when generating temporary files. Cross-platform support may come later.
+
 ## How 2
 You run ptrsg.exe in your console. Like this:
 ```
@@ -20,3 +21,22 @@ These are direct links to installers for each language runtime/compiler:
 - **Lua** — No direct link; use a package manager like [Scoop](https://scoop.sh) (`scoop install lua`) or [LuaBinaries](https://sourceforge.net/projects/luabinaries/)
 - [Rust (via rustup-init.exe)](https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe)
 - [Go 1.24.4 (64-bit MSI)](https://go.dev/dl/go1.24.4.windows-amd64.msi)
+
+## Flags
+
+PTRSG supports the following flags:
+
+- `--verbose [none|lite|heavy]`  
+  Controls logging output.  
+  `none` (default), `lite` shows some useful info, `heavy` logs everything.
+
+- `--queue`  
+  Run each language one at a time instead of in parallel. Might reduce CPU strain.
+
+- `--chaos [low|high]`  
+  Controls how many languages are used.  
+  `low` uses a few core ones, `high` (default) includes all.
+
+- `-S <1-512>`  
+  Specifies how long the output seed should be (in bits).  
+  Example: `-S 128` for a 128-bit seed.
