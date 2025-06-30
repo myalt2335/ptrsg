@@ -1,5 +1,7 @@
 # PTRSG
 One of the tools of all time.
+
+This tool is made for Windows, it hardcodes .exe when making the temporary files it utilizes. Later on I will probably fix that to make it cross platform but for the time being its windows exclusive.
 ## How 2
 You run ptrsg.exe in your console. Like this:
 ```
@@ -8,7 +10,7 @@ Seed generated (512-bit): 314103321985336728778619582545711908610143996991495272
 ```
 ## IMPORTANT
 
-If you for some reason want to use this tool, you need a *LOT* of code language runtimes.
+If you for some reason want to use this tool, you need a **LOT** of code language runtimes.
 
 These are direct links to installers for each language runtime/compiler:
 
